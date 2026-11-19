@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jalkapallo – maailman suosituin peli</title>
+<meta name="description" content="Opintojakson sivusto jalkapallosta: säännöt, Suomen jalkapallo ja omia kokemuksia.">
+<style>
+:root{--pitch:#1f5c3a;--pitch-dark:#16422a;--chalk:#ffffff;--ink:#14231b;--grass:#eef3ee;--gold:#e0a82e}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:#fff;line-height:1.7;font-size:18px}
+a{color:var(--pitch-dark)}
+a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+header{background:var(--pitch);color:var(--chalk);padding:4rem 1.25rem 3.5rem;position:relative;overflow:hidden}
+header::before{content:"";position:absolute;inset:1.25rem;border:3px solid rgba(255,255,255,.55);border-radius:4px;pointer-events:none}
+header::after{content:"";position:absolute;left:50%;top:1.25rem;bottom:1.25rem;border-left:3px solid rgba(255,255,255,.55);pointer-events:none}
+.hero{position:relative;z-index:1;max-width:760px;margin:0 auto;background:var(--pitch);padding:1rem 1.5rem;text-align:center}
+.hero h1{font-family:"Trebuchet MS",system-ui,sans-serif;font-size:clamp(2.4rem,8vw,4.2rem);line-height:1.05;margin:0 0 .75rem}
+.hero p{margin:0;font-size:1.15rem;opacity:.92}
+nav{background:var(--pitch-dark);position:sticky;top:0;z-index:5}
+nav ul{list-style:none;margin:0 auto;padding:0;max-width:760px;display:flex;flex-wrap:wrap;justify-content:center}
+nav a{display:block;padding:.8rem 1rem;color:var(--chalk);text-decoration:none;font-family:system-ui,sans-serif;font-size:.95rem}
+nav a:hover{background:var(--pitch)}
+main{max-width:760px;margin:0 auto;padding:0 1.25rem 3rem}
+section{padding-top:2.5rem}
+h2{font-family:"Trebuchet MS",system-ui,sans-serif;font-size:1.8rem;margin:0 0 .75rem;color:var(--pitch-dark);border-bottom:3px solid var(--gold);display:inline-block;padding-bottom:.15rem}
+h3{font-family:"Trebuchet MS",system-ui,sans-serif;font-size:1.2rem;margin:1.5rem 0 .25rem}
+figure{margin:1.5rem 0}
+figure img{width:100%;height:auto;display:block;border-radius:4px;background:var(--grass);min-height:140px}
+figcaption{font-family:system-ui,sans-serif;font-size:.85rem;color:#455a4d;margin-top:.4rem}
+dl.facts{display:grid;grid-template-columns:max-content 1fr;gap:.35rem 1.25rem;background:var(--grass);padding:1rem 1.25rem;border-left:5px solid var(--pitch);border-radius:4px;margin:1rem 0}
+dl.facts dt{font-weight:bold}
+dl.facts dd{margin:0}
+.note{background:#fff7e0;border-left:5px solid var(--gold);padding:.75rem 1rem;border-radius:4px;font-family:system-ui,sans-serif;font-size:.95rem}
+ul.sources{padding-left:1.2rem}
+ul.sources li{margin-bottom:.5rem}
+footer{background:var(--pitch-dark);color:var(--chalk);text-align:center;padding:1.5rem 1.25rem;font-family:system-ui,sans-serif;font-size:.9rem}
+@media (max-width:520px){body{font-size:17px}dl.facts{grid-template-columns:1fr}dl.facts dd{margin-bottom:.5rem}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hero">
+    <h1>Jalkapallo</h1>
+    <p>Yksinkertainen peli, joka yhdistää miljardeja ihmisiä</p>
+  </div>
+</header>
+
+<nav aria-label="Sivun osiot">
+  <ul>
+    <li><a href="#peli">Peli</a></li>
+    <li><a href="#saannot">Säännöt</a></li>
+    <li><a href="#suomi">Suomessa ja maailmalla</a></li>
+    <li><a href="#minun">Oma tarinani</a></li>
+    <li><a href="#lahteet">Lähteet</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section id="peli">
+  <h2>Mikä jalkapallo on?</h2>
+  <p>Jalkapallo on joukkuepeli, jossa kaksi joukkuetta yrittää saada pallon vastustajan maaliin. Palloa saa pelata lähes koko kehon alueella, mutta käsillä pelaaminen on sallittu vain maalivahdille omalla rangaistusalueellaan. Peli on suosittu ympäri maailmaa, koska sitä voi pelata melkein missä vain: välineiksi riittävät pallo ja jokin tila.</p>
+  <figure>
+    <!-- VAIHDA: lisää oma kuvasi kansioon "kuvat" ja kirjoita tiedostonimi src-kohtaan -->
+    <img src="kuvat/jalkapallo-ottelu.jpg" alt="Jalkapallo-ottelu nurmikentällä, taustalla puita ja katsojia sekä sivurajatuomari lipun kanssa" width="1200" height="833">
+    <figcaption>Kuva 1. Jalkapallo-ottelu Hooe Recreation Groundilla Englannissa. Kuva: Nick Macneill, <a href="https://commons.wikimedia.org/wiki/File:Football_match,_Hooe_Recreation_Ground_-_geograph.org.uk_-_3648893.jpg">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>.</figcaption>
+  </figure>
+</section>
+
+<section id="saannot">
+  <h2>Pelin säännöt lyhyesti</h2>
+  <p>Jalkapallon säännöt ovat kansainvälisesti samat. Niitä ylläpitää kansainvälinen sääntöelin IFAB.</p>
+  <dl class="facts">
+    <dt>Pelaajat</dt><dd>11 pelaajaa per joukkue, joista yksi on maalivahti</dd>
+    <dt>Peliaika</dt><dd>kaksi 45 minuutin puoliaikaa ja lisäaika</dd>
+    <dt>Maali</dt><dd>7,32 metriä leveä ja 2,44 metriä korkea</dd>
+    <dt>Voitto</dt><dd>eniten maaleja tehnyt joukkue</dd>
+  </dl>
+  <h3>Paitsio ja rangaistukset</h3>
+  <p>Paitsiosääntö estää pelaajaa odottamasta maalin edessä kaikkein viimeisimpänä. Rikkeistä tuomari voi antaa vapaapotkun tai rangaistuspotkun, ja törkeästä rikkeestä keltaisen tai punaisen kortin.</p>
+  <p class="note">Tarkista luvut ja sääntöjen sanamuodot lähteestä (IFAB:n Laws of the Game) ennen julkaisua.</p>
+</section>
+
+<section id="suomi">
+  <h2>Jalkapallo Suomessa ja maailmalla</h2>
+  <p>Suomen Palloliitto perustettiin vuonna 1907, ja se johtaa lajia Suomessa. Miesten maajoukkue, Huuhkajat, pääsi ensimmäistä kertaa arvokisoihin EM-kisoissa, jotka pelattiin kesällä 2021. Suomessa jalkapalloa pelataan sekä ulkona että talvella hallissa ja tekonurmella, koska nurmikausi on lyhyt. Laji ei ole sidottu paikkaan: lapset pelaavat sitä kaduilla ja kentillä kaikkialla maailmassa, kuten kuvan 2 kentällä Kiovassa.</p>
+  <figure>
+    <img src="kuvat/lapset-pelaavat-kiova.jpg" alt="Lapset pelaavat jalkapalloa ulkokentällä Kiovassa" width="1200" height="800">
+    <figcaption>Kuva 2. Lapset pelaavat jalkapalloa ulkokentällä Kiovassa, Ukrainassa. Kuva: Oleksandr Plakhota, <a href="https://www.pexels.com/fi-fi/kuva/nuorten-jalkapallo-ottelu-kiovan-ulkostadionilla-34700057/">Pexels</a>, <a href="https://www.pexels.com/fi-fi/license/">Pexelsin lisenssi</a>.</figcaption>
+  </figure>
+</section>
+
+<section id="minun">
+  <h2>Minun jalkapalloni</h2>
+  <p>Aloitin jalkapallon 7-vuotiaana EBK:ssa, ja pelasin joukkueessa hyökkääjänä. Hyökkääjän tehtävä on tehdä maaleja ja viedä peliä eteenpäin, ja se oli minulle luonteva paikka kentällä.</p>
+  <p>Parhaiten mieleen ovat jääneet voitot ja palkinnot sekä oma joukkue. Voitot tuntuivat hyvältä, koska ne tehtiin yhdessä, ja joukkueen kanssa jaetut hetket ovat jääneet mieleen vielä pidempään kuin tulokset.</p>
+  <p>En pelaa jalkapalloa enää, mutta vuodet kentällä opettivat minulle joukkuetyötä, joka on hyödyksi myös työssä ja opiskelussa.</p>
+  <figure>
+    <img src="kuvat/sisaanheitto.jpg" alt="Jalkapalloilija valmistautuu sisäänheittoon illan ottelussa nurmikentällä" width="1200" height="675">
+    <figcaption>Kuva 3. Pelaaja valmistautuu sisäänheittoon illan ottelussa. Kuva: Mateo Franciosi, <a href="https://www.pexels.com/fi-fi/kuva/jalkapalloilija-valmistautuu-sisaanheittoon-kentalla-39041017/">Pexels</a>, <a href="https://www.pexels.com/fi-fi/license/">Pexelsin lisenssi</a>.</figcaption>
+  </figure>
+</section>
+
+<section id="lahteet">
+  <h2>Lähteet</h2>
+  <p>Sivun tiedot perustuvat seuraaviin lähteisiin. Lisää tähän jokainen käyttämäsi sivu, jolla on käyntipäivä.</p>
+  <ul class="sources">
+    <li>IFAB. <em>Laws of the Game</em>. Saatavilla: theifab.org. Luettu: 19.11.2026.</li>
+    <li>Suomen Palloliitto. Saatavilla: palloliitto.fi. Luettu: 19.11.2026.</li>
+    <li>Wikipedia: Jalkapallo. Saatavilla: fi.wikipedia.org. Luettu: 19.11.2026.</li>
+    <li>Tekoäly: Claude (Anthropic). Käytetty sivun rakenteen ja tekstiluonnosten apuna, ja sisältö on tarkistettu yllä olevista lähteistä. Käytetty: 19.11.2026.</li>
+  </ul>
+  <h3>Kuvien lähteet</h3>
+  <ul class="sources">
+    <li>Kuva 1: Nick Macneill (2013). <em>Football match, Hooe Recreation Ground</em> (geograph.org.uk, 3648893). Wikimedia Commons. Lisenssi: CC BY-SA 2.0. Saatavilla: commons.wikimedia.org/wiki/File:Football_match,_Hooe_Recreation_Ground_-_geograph.org.uk_-_3648893.jpg. Luettu: 19.11.2026.</li>
+    <li>Kuva 2: Plakhota, O. (2025). <em>Lapset pelaavat jalkapalloa ulkokentällä Kiovassa, Ukrainassa</em>. Pexels. Lisenssi: Pexelsin lisenssi. Saatavilla: pexels.com/fi-fi/kuva/nuorten-jalkapallo-ottelu-kiovan-ulkostadionilla-34700057/. Luettu: 19.11.2026.</li>
+    <li>Kuva 3: Franciosi, M. (2026). <em>Urheiluasuihin pukeutunut jalkapalloilija valmistautuu rajaheittoon yöaikaisessa ottelussa nurmikentällä</em>. Pexels. Lisenssi: Pexelsin lisenssi. Saatavilla: pexels.com/fi-fi/kuva/jalkapalloilija-valmistautuu-sisaanheittoon-kentalla-39041017/. Luettu: 19.11.2026.</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  Tekijä: Saman Masoud · Opintojakson tehtävä, 2026
+</footer>
+
+</body>
+</html>
